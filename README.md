@@ -45,6 +45,13 @@ Mobile2 model: Redmi Note 12
 Total mobiles in stock: 2**
 
 
+<img width="1920" height="1080" alt="Screenshot from 2025-08-30 13-57-40" src="https://github.com/user-attachments/assets/8b48d4b8-533d-4952-9749-7ac2d8f7c7b6" />
+
+<img width="1002" height="272" alt="Screenshot from 2025-08-30 13-58-14" src="https://github.com/user-attachments/assets/f61a5479-c047-4514-9b99-97337fa92962" />
+
+
+
+
 
 ## Problem 3: Library Book Tracker
 ### Scenario: A library in Delhi wants to track how many books are issued in total and details of each book.
