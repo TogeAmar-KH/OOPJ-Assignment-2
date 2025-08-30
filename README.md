@@ -44,6 +44,84 @@ Mobile1 model: Samsung Galaxy M32
 Mobile2 model: Redmi Note 12
 Total mobiles in stock: 2**
 
+
+
+## Problem 3: Library Book Tracker
+### Scenario: A library in Delhi wants to track how many books are issued in total and details of each book.
+### Requirements:
+### 1. Create a Book class with instance variables: title (String), author (String), issued (boolean).
+### 2. Create static variable totalIssuedBooks to keep track of the total number of books issued.
+### 3. Create a constructor to initialize the book details.
+### 4. Create getters and setters for all instance variables.
+### 5. Create a static method showTotalIssued() to print total issued books.
+### 6. Write a main class to create 3 books, issue some of them (issued = true), and show total issued
+### books.
+**Input Example:
+Book1: "Harry Potter", Author: "J.K. Rowling", Issued: true
+Book2: "Five Point Someone", Author: "Chetan Bhagat", Issued: false
+Book3: "Rich Dad Poor Dad", Author: "Robert Kiyosaki", Issued: true
+Expected Output:
+Book1 issued? true
+Book2 issued? false
+Book3 issued? true
+Total books issued: 2**
+
+```
+class Book{
+
+	private String title;
+	private String author;
+	private Boolean issued;
+
+	public static int totalIssuedBooks;
+
+	Book(String title,String author,Boolean issued){
+	
+		this.title=title;
+		this.author=author;
+		this.issued=issued;
+		if (this.issued==true){
+			totalIssuedBooks++;
+		}
+	
+	}
+	public String getTitle()
+	{
+		return title;
+	}
+	public String getAuthor()
+	{
+		return author;
+	}
+	public Boolean getIssued()
+	{
+		return issued;
+	}
+
+	public void setTitle(String title)
+	{
+		this.title=title;
+	}
+	public void setAuthor(String author){
+		this.author=author;
+	}
+	public void setIssued(Boolean issued){
+		this.issued=issued;
+	}
+	public static void showTotalIssuedBooks(){ 
+		System.out.println(totalIssuedBooks);
+	}
+	public static void main(String args[]){
+		Book b1=new Book("Harry Potter","j.k.rowling",true);
+		System.out.println("Book1 issued? "+b1.getIssued());
+		Book b2=new Book("Five Point Someone","chetan bhagat",false);
+	        System.out.println("Book2 issued? "+b2.getIssued());
+		Book b3=new Book("Rich dad Poor dad","robert kiyosaki",true);
+		System.out.println("Book3 issued? "+b3.getIssued());
+		System.out.println("Total Books issued: "+b1.totalIssuedBooks);
+	}
+}```
+
 <img width="1920" height="1080" alt="Screenshot from 2025-08-30 13-57-40" src="https://github.com/user-attachments/assets/1a01934a-f2fb-4e91-9b9d-b93951e98322" />
 
 <img width="1002" height="272" alt="Screenshot from 2025-08-30 13-58-14" src="https://github.com/user-attachments/assets/ce366972-7a42-4c4a-9d56-91b4bae46a07" />
