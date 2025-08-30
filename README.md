@@ -13,8 +13,9 @@
 **Input Example:
 Cup1: teaType = "Masala Tea"
 Cup2: teaType = "Green Tea"
-Cup3: teaType = "Ginger Tea"
-Expected Output:
+Cup3: teaType = "Ginger Tea"**
+
+**Expected Output:
 Cup1 type: Masala Tea
 Cup2 type: Green Tea
 Cup3 type: Ginger Tea
