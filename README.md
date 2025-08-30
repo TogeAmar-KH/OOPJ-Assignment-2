@@ -132,3 +132,6 @@ class Book{
 <img width="1920" height="1080" alt="Screenshot from 2025-08-30 13-57-40" src="https://github.com/user-attachments/assets/1a01934a-f2fb-4e91-9b9d-b93951e98322" />
 
 <img width="1002" height="272" alt="Screenshot from 2025-08-30 13-58-14" src="https://github.com/user-attachments/assets/ce366972-7a42-4c4a-9d56-91b4bae46a07" />
+
+<img width="1103" height="255" alt="Screenshot from 2025-08-30 17-43-18" src="https://github.com/user-attachments/assets/d50c4876-b354-4924-8d74-c73290a742a0" />
+
