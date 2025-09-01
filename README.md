@@ -132,3 +132,87 @@ class Book{
 
 <img width="1103" height="255" alt="Screenshot from 2025-08-30 17-43-18" src="https://github.com/user-attachments/assets/d50c4876-b354-4924-8d74-c73290a742a0" />
 
+## Problem 4: Employee Salary Manager
+### Scenario: A company in Bengaluru wants to maintain employee details and give a bonus to employees
+### who have worked more than 5 years.
+
+**Requirements:
+1. Create a class Employee with instance variables: name (String), salary (double), yearsOfService (int).
+2. Create static variable totalEmployees to store the number of employees created.
+3. Constructor should initialize all instance variables and increment totalEmployees.
+4. Create getters and setters for all instance variables.
+5. Create a method calculateBonus() that returns 5% of salary if yearsOfService > 5, otherwise 0.
+6. Create a static method showTotalEmployees() to print total employees created.
+7. Write a main class to create 3 employees, print their bonuses, and print total employees.
+Input Example:
+Employee1: Name: "Ravi", Salary: 150000, Years of Service: 6
+Employee2: Name: "Anita", Salary: 120000, Years of Service: 3
+Employee3: Name: "Suresh", Salary: 100000, Years of Service: 5
+Expected Output:
+Employee Ravi Bonus: 7500.0
+Employee Anita Bonus: 0.0
+Employee Suresh Bonus: 0.0
+Total employees: 3**
+
+```
+class Employees{
+	String name;
+	double salary;
+	int year_of_service;
+
+	static int totalEmployees;
+
+	Employees(String name,double salary,int year_of_service){
+		this.name=name;
+		this.salary=salary;
+		this.year_of_service=year_of_service;
+
+		totalEmployees++;
+	}
+
+
+
+
+
+	String getName(){
+		
+		return name;
+	
+	}
+
+	double getSalary(){
+
+		return salary;
+	
+	}
+
+	int getYearOfService(){
+		return year_of_service;	
+	}
+
+	double calculateBonus(){
+		double bonus;
+		bonus=year_of_service>5 ? salary*0.05 :0;
+		return bonus;	
+	}
+	static void showTotalEmployees(){
+		System.out.println(totalEmployees);
+	
+	}
+
+
+	public static void main(String args[]){
+
+		Employees e1=new Employees("Ravi",150000,6);
+		System.out.println("Employee Ravi Bonus : "+e1.calculateBonus());
+		Employees e2=new Employees("Anita",120000,3);
+		System.out.println("Employee Anita Bonus : "+e2.calculateBonus());
+		Employees e3=new Employees("Suresh",100000,5);
+		System.out.println("Employee Suresh Bonus : "+e3.calculateBonus());
+		showTotalEmployees();
+
+	}
+
+
+}
+```
