@@ -216,3 +216,107 @@ class Employees{
 
 }
 ```
+
+## Problem 5: Student Marks Calculator
+### Scenario: A school in Mumbai wants to calculate marks of students and also maintain total students in
+### the class.
+
+**Requirements:
+1. Create a class Student with instance variables: name (String), marks (int).
+2. Create static variable totalStudents to count total number of students.
+3. Constructor to initialize student details and increment totalStudents.
+4. Getter and Setter for marks.
+5. Method isPassed() returns true if marks >= 35, false otherwise.
+6. Static method showTotalStudents() prints total students.
+7. In main class, create 3 students, check if they passed, and show total students.
+Input Example:
+Student1: Name: "Rahul", Marks: 78
+Student2: Name: "Pooja", Marks: 34
+Student3: Name: "Amit", Marks: 65
+Expected Output:
+Student Rahul Passed? true
+Student Pooja Passed? false
+Student Amit Passed? true
+Total students: 3**
+
+```
+import java.util.Scanner;
+
+class Students{
+
+	String name;
+	private int marks;
+
+	static int totalStudents;
+
+	Students(String name,int marks){
+		this.name=name;
+		this.marks=marks;
+
+		totalStudents++;
+	}
+
+
+
+	void setMarks(int marks){
+		this.marks=marks;
+	}
+
+	int getMarks(){
+		return marks;
+	}
+
+	Boolean isPassed(int marks){
+		Boolean pass;
+
+		return pass = (marks>35) ? true : false;
+	}
+
+	static void showTotalStudents(){
+		System.out.println(totalStudents);
+	}
+
+	public static void main(String args[]){
+
+		Scanner s = new Scanner(System.in);
+
+		System.out.print("Student1 Name: ");
+		String Student1=s.nextLine();
+		System.out.print("Marks");
+		int marks1=Integer.parseInt(s.nextLine());
+
+		Students s1= new Students(Student1,marks1);
+
+
+		System.out.print("Student2 Name: ");
+                String Student2=s.nextLine();
+		//System.out.println(Student2);
+                System.out.print("Marks");
+                int marks2=Integer.parseInt(s.nextLine());
+
+		Students s2= new Students(Student2,marks2);
+
+
+		System.out.print("Student3 Name: ");
+                String Student3=s.nextLine();
+                System.out.print("Marks");
+		// dont use nextInt As it add /n character to input buffer
+                int marks3=Integer.parseInt(s.nextLine());
+                System.out.print(" ");
+
+		Students s3= new Students(Student3,marks3);
+
+		System.out.println("Student "+Student1+" passed?"+ s1.isPassed(s1.getMarks()));
+
+
+		System.out.println("Student "+Student2+" passed?"+ s2.isPassed(s2.getMarks()));
+
+                System.out.println("Student "+Student3+" passed?"+ s3.isPassed(s3.getMarks()));
+
+		showTotalStudents();
+
+
+	}
+
+}
+```
