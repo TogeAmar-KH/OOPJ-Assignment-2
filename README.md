@@ -320,3 +320,14 @@ class Students{
 
 }
 ```
+
+## Problem 6: Indian Railway Ticket Booking
+### Scenario:
+You are building a mini ticket booking system. A passenger can book a ticket either by giving name and
+age or name, age, and seat type. The system should also count the total tickets booked using a static
+counter.
+<img width="1920" height="1080" alt="Screenshot from 2025-09-02 15-17-20" src="https://github.com/user-attachments/assets/1d8c2f7c-62f1-4d0e-bf3a-4fcf3ea25ba4" />
+
+<img width="1106" height="270" alt="Screenshot from 2025-09-02 15-17-11" src="https://github.com/user-attachments/assets/e7cd5073-9170-4f55-97db-c207fcc05118" />
+
+
